@@ -94,7 +94,7 @@ a { text-decoration: none; }
 .aside { position: absolute; top: 215px; left: 0; width: 30%; padding-left: 70px; z-index: 9; }
 
 .btn { position: relative; display: block; cursor: pointer; opacity: 0.5; }
-.btn .btn__inn { display: inline-block; vertical-align: middle; margin: 10px; text-align: center; background-image: url("../img/icons.png"); width: 74px; height: 81px; background-position: -96px 0px; }
+.btn .btn__inn { display: inline-block; vertical-align: middle; margin: 9px; text-align: center; background-image: url("../img/icons.png"); width: 74px; height: 81px; background-position: -96px 0px; }
 .btn .btn__inn span { display: inline-block; vertical-align: middle; margin: 23px 0 5px; }
 .btn .btn__inn p { display: inline-block; vertical-align: middle; color: #FFF; font-size: 46px; font-weight: 700; line-height: 1.77; font-family: "Philosopher", sans-serif; }
 .btn .p { display: inline-block; vertical-align: middle; margin-left: 10px; }
@@ -103,10 +103,10 @@ a { text-decoration: none; }
 .btn.is-active .btn__inn { margin: 0; background-image: url("../img/icons.png"); width: 92px; height: 99px; background-position: 0px 0px; }
 .btn.is-active .btn__inn p { color: #9F937A; line-height: 2.17; }
 .btn.is-active .btn__inn span { margin-top: 30px; }
-.btn.is-active.btn_instance .btn__inn span { background-image: url("../img/icons.png"); width: 40px; height: 35px; background-position: -44px -103px; }
-.btn.is-active.btn_weapon .btn__inn span { background-image: url("../img/icons.png"); width: 33px; height: 33px; background-position: -125px -103px; }
-.btn.btn_instance .btn__inn span { background-image: url("../img/icons.png"); width: 40px; height: 35px; background-position: 0px -103px; }
-.btn.btn_weapon .btn__inn span { background-image: url("../img/icons.png"); width: 33px; height: 33px; background-position: -88px -103px; }
+.btn.is-active.btn_instance .btn__inn span { margin-top: 30px; background-image: url("../img/icons.png"); width: 40px; height: 35px; background-position: -44px -103px; }
+.btn.is-active.btn_weapon .btn__inn span { margin-top: 33px; background-image: url("../img/icons.png"); width: 33px; height: 33px; background-position: -125px -103px; }
+.btn.btn_instance .btn__inn span { margin-top: 21px; background-image: url("../img/icons.png"); width: 40px; height: 35px; background-position: 0px -103px; }
+.btn.btn_weapon .btn__inn span { margin-top: 24px; background-image: url("../img/icons.png"); width: 33px; height: 33px; background-position: -88px -103px; }
 
 .video { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
