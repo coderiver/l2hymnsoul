@@ -1,0 +1,137 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+.icon-arr-back { width: 13px; height: 3px; background-image: url("../img/icons.png"); background-position: -149px -85px; }
+
+.icon-border_2 { width: 74px; height: 81px; background-image: url("../img/icons.png"); background-position: -96px 0px; }
+
+.icon-btn-bg { width: 92px; height: 99px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
+
+.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -96px -94px; }
+
+.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: -96px -85px; }
+
+.icon-eq_1 { width: 33px; height: 33px; background-image: url("../img/icons.png"); background-position: -88px -103px; }
+
+.icon-eq_2 { width: 33px; height: 33px; background-image: url("../img/icons.png"); background-position: -125px -103px; }
+
+.icon-ins_1 { width: 40px; height: 35px; background-image: url("../img/icons.png"); background-position: 0px -103px; }
+
+.icon-ins_2 { width: 40px; height: 35px; background-image: url("../img/icons.png"); background-position: -44px -103px; }
+
+@font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
+
+.icon-sepa:before { content: ""; }
+
+.icon-skrill:before { content: ""; }
+
+.l { *zoom: 1; }
+.l:after { content: " "; display: table; clear: both; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }
+
+* { box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+
+a { text-decoration: none; }
+
+.out { position: relative; }
+
+.btn-play { position: relative; float: right; display: block; width: 220px; height: 40px; border-radius: 5px; background-image: linear-gradient(to top, #e78500 0%, #e78500 1%, #f6ae00 50%, #ffeb60 91%, #fffce5 100%); box-shadow: 0 3px 5px #994905, inset 0 1px 0 2px rgba(255, 255, 255, 0.21); color: #303030; font-size: 20px; font-weight: bold; line-height: 2; font-family: "PT Sans", sans-serif; transition: -webkit-transform 300ms; transition: transform 300ms; z-index: 3; }
+.btn-play:hover { -webkit-transform: translateY(2px); -ms-transform: translateY(2px); transform: translateY(2px); }
+
+.btn-back { position: relative; float: left; display: block; padding: 10px 0 0 25px; text-decoration: underline; color: #FFF; font-size: 12px; opacity: 1; transition: opacity 300ms; z-index: 3; }
+.btn-back:before { content: ""; position: absolute; top: 16px; left: 0px; background-image: url("../img/icons.png"); width: 13px; height: 3px; background-position: -149px -85px; }
+.btn-back:hover { opacity: 0.5; }
+
+.container { display: inline-block; vertical-align: top; width: 100%; padding: 135px 0 0 360px; }
+
+.h1 { color: #FFF; font-size: 56px; font-weight: normal; line-height: 1; font-family: "Philosopher", sans-serif; }
+
+.h3 { color: #FFF; font-size: 18px; font-weight: normal; }
+
+.p { color: #FFF; font-size: 14px; line-height: 1.5; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.section { position: relative; max-width: 1200px; min-width: 960px; width: 100%; height: 676px; margin: 0 auto; transition: opacity 1000ms, visibility 1000ms; visibility: hidden; opacity: 0; text-align: center; font-size: 0; text-align: left; }
+.section:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.section.nav { visibility: visible; opacity: 1; }
+.section.section_view { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.section.main { background: url("../img/main-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.instance { background: url("../img/instance-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.weapon { background: url("../img/weapon-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.is-active { visibility: visible; opacity: 1; }
+.section .section__top { position: absolute; top: 0; left: 0; right: 0; padding: 55px 35px 0 45px; text-align: center; z-index: 9; *zoom: 1; }
+.section .section__top:after { content: " "; display: table; clear: both; }
+
+.aside { position: absolute; top: 215px; left: 0; width: 30%; padding-left: 70px; z-index: 9; }
+
+.btn { position: relative; display: block; cursor: pointer; opacity: 0.5; }
+.btn .btn__inn { display: inline-block; vertical-align: middle; margin: 10px; text-align: center; background-image: url("../img/icons.png"); width: 74px; height: 81px; background-position: -96px 0px; }
+.btn .btn__inn span { display: inline-block; vertical-align: middle; margin: 23px 0 5px; }
+.btn .btn__inn p { display: inline-block; vertical-align: middle; color: #FFF; font-size: 46px; font-weight: 700; line-height: 1.77; font-family: "Philosopher", sans-serif; }
+.btn .p { display: inline-block; vertical-align: middle; margin-left: 10px; }
+.btn:hover { opacity: 1; }
+.btn.is-active { opacity: 1; }
+.btn.is-active .btn__inn { margin: 0; background-image: url("../img/icons.png"); width: 92px; height: 99px; background-position: 0px 0px; }
+.btn.is-active .btn__inn p { color: #9F937A; line-height: 2.17; }
+.btn.is-active .btn__inn span { margin-top: 30px; }
+.btn.is-active.btn_instance .btn__inn span { background-image: url("../img/icons.png"); width: 40px; height: 35px; background-position: -44px -103px; }
+.btn.is-active.btn_weapon .btn__inn span { background-image: url("../img/icons.png"); width: 33px; height: 33px; background-position: -125px -103px; }
+.btn.btn_instance .btn__inn span { background-image: url("../img/icons.png"); width: 40px; height: 35px; background-position: 0px -103px; }
+.btn.btn_weapon .btn__inn span { background-image: url("../img/icons.png"); width: 33px; height: 33px; background-position: -88px -103px; }
+
+.video { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+.inner { display: inline-block; vertical-align: middle; margin-right: 90px; color: #FFF; }
+.inner .h1 { margin-bottom: 45px; }
+.inner .inner__item { width: 240px; }
+.inner .inner__item .p { margin-bottom: 25px; }
+.inner .inner__item .p a { color: #9F937B; }
+.inner .inner__character { position: absolute; }
+.inner .inner__caption { position: absolute; color: rgba(255, 255, 255, 0.5); font-size: 12px; font-style: italic; line-height: 1.5; }
+.inner .inner__caption p { display: block; }
+.inner .inner__caption span { display: block; text-align: right; }
+
+.main .main__text p { display: block; font-size: 18px; line-height: 1.6; }
+
+.instance .instance__inn { position: relative; *zoom: 1; }
+.instance .instance__inn:after { content: " "; display: table; clear: both; }
+.instance .instance__inn .inner__character { top: -25px; left: 215px; }
+.instance .instance__inn .inner__caption { bottom: 230px; right: -75px; }
+
+.weapon .weapon__inn { position: relative; }
+.weapon .weapon__inn .inner__item { display: inline-block; vertical-align: top; margin-right: 60px; }
+.weapon .weapon__inn .inner__character { top: -29px; right: -160px; }
+.weapon .weapon__inn .inner__caption { bottom: 170px; left: -150px; }
+
+
+
+/*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,177 @@
+// Normally mainpage styles
+.section
+	position: relative
+	max-width: 1200px
+	min-width: 960px
+	width: 100%
+	height: 676px 
+	margin: 0 auto
+	transition: opacity 1000ms, visibility 1000ms
+	visibility: hidden
+	opacity: 0
+	+vertical
+	text-align: left
+	&.nav
+		visibility: visible
+		opacity: 1
+	&.section_view
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+	&.main
+		background: url("../img/main-bg.jpg")
+		+cover
+	&.instance
+		background: url("../img/instance-bg.jpg")
+		+cover
+	&.weapon
+		background: url("../img/weapon-bg.jpg")
+		+cover
+	&.is-active
+		visibility: visible
+		opacity: 1
+	.section__top
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		padding: 55px 35px 0 45px
+		text-align: center
+		z-index: 9
+		+clr
+		
+.aside
+	position: absolute
+	top: 215px
+	left: 0
+	width: percentage(360/1200)
+	padding-left: 70px
+	z-index: 9
+	
+.btn
+	position: relative
+	display: block
+	cursor: pointer
+	opacity: 0.5
+	.btn__inn
+		display: inline-block
+		vertical-align: middle
+		margin: 10px
+		text-align: center
+		+s(border_2)
+		span
+			display: inline-block
+			vertical-align: middle
+			margin: 23px 0 5px
+		p
+			display: inline-block
+			vertical-align: middle
+			color: #FFF
+			font-size: 46px
+			font-weight: 700
+			line-height: 1.77
+			+phil 
+	.p
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+	&:hover
+		opacity: 1
+	&.is-active
+		opacity: 1
+		.btn__inn
+			margin: 0
+			+s(btn-bg) 
+			p
+				color: #9F937A 
+				line-height: 2.17
+			span
+				margin-top: 30px
+		&.btn_instance
+			.btn__inn
+				span
+					+s(ins_2)
+		&.btn_weapon
+			.btn__inn
+				span
+					+s(eq_2)
+	&.btn_instance
+		.btn__inn
+			span
+				+s(ins_1)
+	&.btn_weapon
+		.btn__inn
+			span
+				+s(eq_1)
+
+.video
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+
+.inner
+	display: inline-block
+	vertical-align: middle
+	margin-right: 90px
+	color: #FFF 
+	.h1
+		margin-bottom: 45px
+	.inner__item
+		width: 240px
+		.p
+			margin-bottom: 25px
+			a
+				color: #9F937B 
+	.inner__character
+		position: absolute
+	.inner__caption
+		position: absolute
+		color: rgba(#FFF, 0.5)
+		font-size: 12px
+		font-style: italic
+		line-height: 1.5
+		p
+			display: block
+		span
+			display: block
+			text-align: right
+		
+.main
+	.main__text
+		p
+			display: block
+			font-size: 18px
+			line-height: 1.6
+				
+.instance
+	.instance__inn
+		position: relative
+		+clr
+		.inner__character
+			top: -25px
+			left: 215px
+		.inner__caption
+			bottom: 230px
+			right: -75px
+
+.weapon
+	.weapon__inn
+		position: relative
+		.inner__item
+			display: inline-block
+			vertical-align: top
+			margin-right: 60px
+		.inner__character
+			top: -29px
+			right: -160px
+		.inner__caption
+			bottom: 170px
+			left: -150px
+		
+
+
+

@@ -1,0 +1,71 @@
+$icons: (0:0)
+$icons: map-merge($icons,(arr-back: (X: -149px, Y:-85px, W: 13px, H: 3px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(border_2: (X: -96px, Y:0px, W: 74px, H: 81px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(btn-bg: (X: 0px, Y:0px, W: 92px, H: 99px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(codedby: (X: -96px, Y:-94px, W: 47px, H: 5px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(coderiver: (X: -96px, Y:-85px, W: 49px, H: 5px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eq_1: (X: -88px, Y:-103px, W: 33px, H: 33px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eq_2: (X: -125px, Y:-103px, W: 33px, H: 33px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(ins_1: (X: 0px, Y:-103px, W: 40px, H: 35px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(ins_2: (X: -44px, Y:-103px, W: 40px, H: 35px, TW: 170px, TH: 138px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+
+@mixin s($i)
+	+sprite($i)
+
+.icon-arr-back
+	width: 13px
+	height: 3px
+	background-image: url('../img/icons.png')
+	background-position: -149px -85px
+.icon-border_2
+	width: 74px
+	height: 81px
+	background-image: url('../img/icons.png')
+	background-position: -96px 0px
+.icon-btn-bg
+	width: 92px
+	height: 99px
+	background-image: url('../img/icons.png')
+	background-position: 0px 0px
+.icon-codedby
+	width: 47px
+	height: 5px
+	background-image: url('../img/icons.png')
+	background-position: -96px -94px
+.icon-coderiver
+	width: 49px
+	height: 5px
+	background-image: url('../img/icons.png')
+	background-position: -96px -85px
+.icon-eq_1
+	width: 33px
+	height: 33px
+	background-image: url('../img/icons.png')
+	background-position: -88px -103px
+.icon-eq_2
+	width: 33px
+	height: 33px
+	background-image: url('../img/icons.png')
+	background-position: -125px -103px
+.icon-ins_1
+	width: 40px
+	height: 35px
+	background-image: url('../img/icons.png')
+	background-position: 0px -103px
+.icon-ins_2
+	width: 40px
+	height: 35px
+	background-image: url('../img/icons.png')
+	background-position: -44px -103px
