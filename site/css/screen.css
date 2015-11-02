@@ -68,7 +68,7 @@ a { text-decoration: none; }
 .btn-back:before { content: ""; position: absolute; top: 16px; left: 0px; background-image: url("../img/icons.png"); width: 13px; height: 3px; background-position: -149px -85px; }
 .btn-back:hover { opacity: 0.5; }
 
-.container { display: inline-block; vertical-align: top; width: 100%; padding: 135px 0 0 360px; }
+.container { position: relative; display: inline-block; vertical-align: top; width: 100%; padding: 135px 0 0 360px; }
 
 .h1 { color: #FFF; font-size: 56px; font-weight: normal; line-height: 1; font-family: "Philosopher", sans-serif; }
 
