@@ -68,7 +68,8 @@ a { text-decoration: none; }
 .btn-back:before { content: ""; position: absolute; top: 16px; left: 0px; background-image: url("../img/icons.png"); width: 13px; height: 3px; background-position: -149px -85px; }
 .btn-back:hover { opacity: 0.5; }
 
-.container { position: relative; display: inline-block; vertical-align: top; width: 100%; padding: 135px 0 0 360px; }
+.container { position: relative; padding: 135px 0 0 360px; }
+@media only screen and (max-width: 1030px) { .container { padding-left: 320px; } }
 
 .h1 { color: #FFF; font-size: 56px; font-weight: normal; line-height: 1; font-family: "Philosopher", sans-serif; }
 
@@ -80,18 +81,19 @@ a { text-decoration: none; }
 
 .right { float: right; }
 
-.section { position: relative; max-width: 1200px; min-width: 960px; width: 100%; height: 676px; margin: 0 auto; transition: opacity 1000ms, visibility 1000ms; visibility: hidden; opacity: 0; text-align: center; font-size: 0; text-align: left; }
+.section { position: relative; max-width: 1200px; min-width: 960px; width: 100%; height: 832px; margin: 0 auto; padding-bottom: 155px; transition: opacity 1000ms, visibility 1000ms; visibility: hidden; opacity: 0; text-align: center; font-size: 0; text-align: left; overflow: hidden; }
 .section:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .section.nav { visibility: visible; opacity: 1; }
 .section.section_view { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
-.section.main { background: url("../img/main-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.section.instance { background: url("../img/instance-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-.section.weapon { background: url("../img/weapon-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.main .section__wrap { background: url("../img/main-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.instance .section__wrap { background: url("../img/instance-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.section.weapon .section__wrap { background: url("../img/weapon-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .section.is-active { visibility: visible; opacity: 1; }
 .section .section__top { position: absolute; top: 0; left: 0; right: 0; padding: 55px 35px 0 45px; text-align: center; z-index: 9; *zoom: 1; }
 .section .section__top:after { content: " "; display: table; clear: both; }
+.section .section__wrap { display: inline-block; vertical-align: top; width: 100%; height: 676px; }
 
-.aside { position: absolute; top: 215px; left: 0; width: 30%; padding-left: 70px; z-index: 9; }
+.aside { position: absolute; top: 215px; left: 0; width: 360px; padding-left: 70px; z-index: 9; }
 
 .btn { position: relative; display: block; cursor: pointer; opacity: 0.5; }
 .btn .btn__inn { display: inline-block; vertical-align: middle; margin: 9px; text-align: center; background-image: url("../img/icons.png"); width: 74px; height: 81px; background-position: -96px 0px; }
@@ -111,26 +113,30 @@ a { text-decoration: none; }
 .video { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .inner { display: inline-block; vertical-align: middle; margin-right: 90px; color: #FFF; }
-.inner .h1 { margin-bottom: 45px; }
-.inner .inner__item { width: 240px; }
+.inner .h1 { position: relative; margin-bottom: 45px; z-index: 3; }
+.inner .inner__item { position: relative; width: 240px; z-index: 3; }
 .inner .inner__item .p { margin-bottom: 25px; }
 .inner .inner__item .p a { color: #9F937B; }
 .inner .inner__character { position: absolute; }
 .inner .inner__caption { position: absolute; color: rgba(255, 255, 255, 0.5); font-size: 12px; font-style: italic; line-height: 1.5; }
 .inner .inner__caption p { display: block; }
 .inner .inner__caption span { display: block; text-align: right; }
+@media only screen and (max-width: 1080px) { .inner { margin-right: 40px; } }
 
 .main .main__text p { display: block; font-size: 18px; line-height: 1.6; }
 
 .instance .instance__inn { position: relative; *zoom: 1; }
 .instance .instance__inn:after { content: " "; display: table; clear: both; }
-.instance .instance__inn .inner__character { top: -25px; left: 215px; }
+.instance .instance__inn .inner__character { top: -25px; right: 115px; z-index: 1; }
 .instance .instance__inn .inner__caption { bottom: 230px; right: -75px; }
+@media only screen and (max-width: 1030px) { .instance .instance__inn .inner__character { top: -81px; right: 95px; }
+  .instance .instance__inn .inner__caption { bottom: 170px; } }
 
 .weapon .weapon__inn { position: relative; }
 .weapon .weapon__inn .inner__item { display: inline-block; vertical-align: top; margin-right: 60px; }
 .weapon .weapon__inn .inner__character { top: -29px; right: -160px; }
 .weapon .weapon__inn .inner__caption { bottom: 170px; left: -150px; }
+@media only screen and (max-width: 1030px) { .weapon .weapon__inn .inner__item { margin-right: 20px; } }
 
 
 

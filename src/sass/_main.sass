@@ -3,14 +3,16 @@
 	position: relative
 	max-width: 1200px
 	min-width: 960px
-	width: 100%
-	height: 676px 
+	width: 100% 
+	height: 832px
 	margin: 0 auto
+	padding-bottom: 155px
 	transition: opacity 1000ms, visibility 1000ms
 	visibility: hidden
 	opacity: 0
 	+vertical
 	text-align: left
+	overflow: hidden
 	&.nav
 		visibility: visible
 		opacity: 1
@@ -21,14 +23,17 @@
 		bottom: 0
 		left: 0
 	&.main
-		background: url("../img/main-bg.jpg")
-		+cover
+		.section__wrap
+			background: url("../img/main-bg.jpg")
+			+cover
 	&.instance
-		background: url("../img/instance-bg.jpg")
-		+cover
+		.section__wrap
+			background: url("../img/instance-bg.jpg")
+			+cover
 	&.weapon
-		background: url("../img/weapon-bg.jpg")
-		+cover
+		.section__wrap
+			background: url("../img/weapon-bg.jpg")
+			+cover
 	&.is-active
 		visibility: visible
 		opacity: 1
@@ -41,12 +46,17 @@
 		text-align: center
 		z-index: 9
 		+clr
-		
+	.section__wrap
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		height: 676px
+
 .aside
 	position: absolute
 	top: 215px
 	left: 0
-	width: percentage(360/1200)
+	width: 360px
 	padding-left: 70px
 	z-index: 9
 	
@@ -123,9 +133,13 @@
 	margin-right: 90px
 	color: #FFF 
 	.h1
+		position: relative
 		margin-bottom: 45px
+		z-index: 3
 	.inner__item
+		position: relative
 		width: 240px
+		z-index: 3
 		.p
 			margin-bottom: 25px
 			a
@@ -143,6 +157,8 @@
 		span
 			display: block
 			text-align: right
+	+r(1080)
+		margin-right: 40px
 		
 .main
 	.main__text
@@ -157,10 +173,18 @@
 		+clr
 		.inner__character
 			top: -25px
-			left: 215px
+			right: 115px
+			z-index: 1
 		.inner__caption
 			bottom: 230px
 			right: -75px
+	+r(1030)
+		.instance__inn
+			.inner__character
+				top: -81px
+				right: 95px
+			.inner__caption
+				bottom: 170px
 
 .weapon
 	.weapon__inn
@@ -175,6 +199,10 @@
 		.inner__caption
 			bottom: 170px
 			left: -150px
+	+r(1030)
+		.weapon__inn
+			.inner__item
+				margin-right: 20px
 		
 
 
